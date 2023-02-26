@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
+import CountButton from "./CountButton";
 
-const OrderTotal = ({ props }) => {
-  // const [prevCount, totalCount] = useState(1);
+const OrderTotal = (props) => {
   const [prevValue, totalValue] = useState(6370);
-  console.log(props);
+  // const count = props.count;
 
-  useEffect(() => {
-    console.log(props);
-  }, []);
+  // useEffect(() => {
+  //   console.log(props);
+  // }, []);
 
   return (
     <div className="orderTotal">

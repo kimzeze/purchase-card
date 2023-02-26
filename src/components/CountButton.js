@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+// import OrderTotal from "./OrderTotal";
 
 const CountButton = () => {
   const [count, setCount] = useState(1);
 
-  useEffect(() => {}, [count]);
+  // useEffect(() => {}, [count]);
 
   const minus = () => {
     if (count > 1) {
@@ -17,6 +18,7 @@ const CountButton = () => {
 
   return (
     <div className="CountButton">
+      {/* <OrderTotal count={count}></OrderTotal> */}
       <button className="clickButton" onClick={minus}>
         -
       </button>
