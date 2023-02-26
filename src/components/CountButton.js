@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const CountButton = () => {
   const [count, setCount] = useState(1);
 
-  useEffect(() => {
-    console.log({ count });
-  }, [count]);
+  useEffect(() => {}, [count]);
 
   const minus = () => {
     if (count > 1) {
@@ -19,9 +17,13 @@ const CountButton = () => {
 
   return (
     <div className="CountButton">
-      <button onClick={minus}>-</button>
-      <span>{count}</span>
-      <button onClick={plus}>+</button>
+      <button className="clickButton" onClick={minus}>
+        -
+      </button>
+      <span className="buttonValue">{count}</span>
+      <button className="clickButton" onClick={plus}>
+        +
+      </button>
     </div>
   );
 };

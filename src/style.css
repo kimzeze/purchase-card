@@ -1,13 +1,16 @@
-h1,
-p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  color: #333333;
 }
 
 body {
@@ -18,10 +21,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   padding: 16px;
   width: 360px;
-  height: 568px;
+  height: 584px;
 
   border: 2px solid skyblue;
 }
@@ -32,7 +34,6 @@ body {
   width: 100%;
   height: 183px;
   border: 1px solid #dee0e3;
-  align-self: stretch;
 }
 
 .product__title {
@@ -40,4 +41,194 @@ body {
   font-size: 18px;
   line-height: 130%;
   letter-spacing: -0.005em;
+
+  /* border: 1px solid salmon; */
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dee0e3;
+
+  /* border: 1px solid red; */
+}
+
+.discountRate {
+  color: #6890dc;
+  font-size: 24px;
+  line-height: 24px;
+
+  /* border: 1px solid green; */
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.fixedPrice {
+  color: #999999;
+  font-size: 16px;
+  padding-right: 6px;
+  text-decoration-line: line-through;
+
+  /* border: 1px solid green; */
+}
+
+.discountPrice {
+  font-weight: 400;
+  font-size: 22px;
+
+  /* border: 1px solid green; */
+}
+
+/* Delivery */
+.delivery {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dee0e3;
+
+  /* border: 1px solid blue; */
+}
+
+.delivery__info {
+  margin-bottom: 8px;
+}
+
+.delivery__type {
+  font-weight: 400;
+
+  /* border: 1px solid orange; */
+}
+
+.delivery__price {
+  font-weight: 700;
+}
+
+.line {
+  width: 14px;
+  height: 0px;
+  margin-left: 6px;
+  margin-right: 6px;
+
+  border: 1px solid #dee0e3;
+  transform: rotate(90deg);
+}
+
+.delivery__payment {
+  color: #6b90dc;
+  font-weight: 700;
+}
+
+.delivery__max {
+  color: #999999;
+  font-weight: 400;
+}
+
+/* CountButton */
+.CountButton {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 104px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #dee0e3;
+  border: 1px solid #dee0e3;
+}
+
+.clickButton {
+  font-size: 16px;
+  font-weight: 400;
+  width: 34px;
+  height: 34px;
+  background: #f1f2f4;
+  border: none;
+}
+
+.buttonValue {
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+}
+
+/* OrderTotal */
+.orderTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dee0e3;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  /* border: 1px solid red; */
+}
+
+.priceInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.priceInfo__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  padding-right: 2px;
+}
+
+.priceInfo__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 11px;
+  width: 16px;
+  height: 16px;
+
+  background: #ffffff;
+  border: 1px solid #dee0e3;
+}
+
+.totalPrice {
+  display: flex;
+  align-items: center;
+}
+
+.totalPrice__count {
+  color: #999999;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.totalPrice__value {
+  color: #6890dc;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* PurchageButton */
+
+.purchageButton button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 48px;
+  background: #03c75a;
+  border-radius: 6px;
+  border: none;
+}
+
+.purchageButton span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
 }

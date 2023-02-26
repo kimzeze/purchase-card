@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const OrderTotal = ({ props }) => {
   // const [prevCount, totalCount] = useState(1);
@@ -10,17 +10,15 @@ const OrderTotal = ({ props }) => {
   }, []);
 
   return (
-    <div className="OrderTotal">
+    <div className="orderTotal">
       <div className="priceInfo">
         <span className="priceInfo__text">총 상품 금액</span>
-        <button className="priceInfo__button" onClick="">
-          ?
-        </button>
+        <button className="priceInfo__button">?</button>
       </div>
       <div className="totalPrice">
         <span className="totalPrice__count">총 수량 1개</span>
         <span className="line"></span>
-        <span className="totalPrice__value">원</span>
+        <span className="totalPrice__value">{prevValue}원</span>
       </div>
     </div>
   );
