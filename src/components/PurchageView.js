@@ -1,6 +1,6 @@
 import React from "react";
 
-const PurchageView = () => {
+export const PurchageView = () => {
   return (
     <div className="product">
       <img

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Delivery = () => {
+export const Delivery = () => {
   return (
     <div className="delivery">
       <div className="delivery__info">

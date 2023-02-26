@@ -1,6 +1,6 @@
 import React from "react";
 
-const PurchageButton = () => {
+export const PurchageButton = () => {
   return (
     <div className="purchageButton">
       <button>
