@@ -227,6 +227,11 @@ body {
   border: none;
 }
 
+.purchageButton button:hover {
+  cursor: pointer;
+  background: #0aae4f;
+}
+
 .purchageButton span {
   color: #ffffff;
   font-size: 14px;
